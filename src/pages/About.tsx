@@ -6,7 +6,7 @@ import { Button } from '../components/ui/moving-border';
 const About = () => {
   const teamMembers = [
     {
-      name: "Alejandro U",
+      name: "Carlos Rodriguez",
       title: "Lead DevOps Engineer",
       bio: "10+ years of cloud infrastructure expertise with AWS, Azure, and GCP. Specializes in containerization, CI/CD automation, and scalable system architecture design. Miami native with a passion for innovation.",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
