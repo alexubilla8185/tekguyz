@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Menu, X, Code, Sun, Palmtree } from 'lucide-react';
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const navItems = [
