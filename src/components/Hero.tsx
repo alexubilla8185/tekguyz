@@ -99,7 +99,7 @@ const Hero = () => {
             className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
           >
             {[
-              { number: "500+", label: "Projects Delivered" },
+              { number: "50+", label: "Projects Delivered" },
               { number: "98%", label: "Client Satisfaction" },
               { number: "24/7", label: "Support Available" }
             ].map((stat, index) => (
