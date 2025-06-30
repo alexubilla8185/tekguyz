@@ -46,8 +46,8 @@ const Contact = () => {
 
               <div className="space-y-6">
                 {[
-                  { icon: Mail, title: "Email", info: "hello@tekguyz.com" },
-                  { icon: Phone, title: "Phone", info: "+1 (305) 555-TECH" },
+                  { icon: Mail, title: "Email", info: "info@tekguyz.com" },
+                  { icon: Phone, title: "Phone", info: "+1 (305) 857-5258" },
                   { icon: MapPin, title: "Address", info: "123 Ocean Drive, Miami Beach, FL 33139" },
                   { icon: Clock, title: "Hours", info: "Mon-Fri 9AM-6PM EST" }
                 ].map((contact, index) => (
