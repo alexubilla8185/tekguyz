@@ -1,0 +1,135 @@
+import React from 'react';
+import Hero from '../components/Hero';
+import { motion } from 'framer-motion';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Button } from '../components/ui/moving-border';
+
+const Home = () => {
+  const features = [
+    "24/7 DevOps Monitoring & Support",
+    "Custom Software Solutions",
+    "Cloud Migration & Optimization",
+    "Automated Testing & QA",
+    "Technical Documentation",
+    "Domain & DNS Management"
+  ];
+
+  return (
+    <div className="pt-16">
+      <Hero />
+      
+      {/* Features Section */}
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-pink-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Why Choose TEKGUYZ?
+              </h2>
+              <p className="text-lg text-gray-600 mb-8">
+                We combine deep technical expertise with South Florida's innovative spirit to deliver 
+                solutions that not only work flawlessly but drive real business value under the sunshine.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                {features.map((feature, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-center space-x-3"
+                  >
+                    <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">{feature}</span>
+                  </motion.div>
+                ))}
+              </div>
+
+              <Button
+                borderRadius="1.75rem"
+                className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-orange-300"
+                containerClassName="w-auto"
+              >
+                Learn More About Us
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="bg-gradient-to-br from-orange-100 to-pink-100 p-8 rounded-2xl">
+                <img
+                  src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Team collaboration"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg"
+                />
+                
+                <div className="mt-6 grid grid-cols-2 gap-4">
+                  <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                    <div className="text-2xl font-bold text-orange-600">25+</div>
+                    <div className="text-sm text-gray-600">Years Experience</div>
+                  </div>
+                  <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                    <div className="text-2xl font-bold text-pink-600">100+</div>
+                    <div className="text-sm text-gray-600">Happy Clients</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-orange-500 via-pink-500 to-yellow-500">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Ready to Transform Your Technology?
+            </h2>
+            <p className="text-xl text-white/90 mb-8">
+              Let's discuss how we can help accelerate your digital transformation journey in sunny South Florida.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                borderRadius="1.75rem"
+                className="bg-white text-orange-600 border-white hover:bg-gray-50"
+                containerClassName="w-auto"
+              >
+                Schedule Consultation
+              </Button>
+              
+              <Button
+                borderRadius="1.75rem"
+                className="bg-white/10 backdrop-blur-md text-white border-white/30 hover:bg-white/20"
+                containerClassName="w-auto"
+              >
+                View Portfolio
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;

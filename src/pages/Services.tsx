@@ -1,0 +1,205 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { 
+  Code2, 
+  Settings, 
+  Shield, 
+  FileText, 
+  Globe, 
+  Server,
+  ArrowRight
+} from 'lucide-react';
+import { Button } from '../components/ui/moving-border';
+
+const Services = () => {
+  const services = [
+    {
+      icon: Settings,
+      title: "Tech Consulting",
+      description: "We provide strategic guidance to align your technology with your business goals. Our experts help you navigate complex challenges, from cloud adoption and infrastructure optimization to implementing a full-scale DevOps transformation. We create a clear roadmap for innovation, scalability, and long-term success.",
+      ctaText: "Plan Your Strategy",
+      gradient: "from-orange-500 to-yellow-500"
+    },
+    {
+      icon: Code2,
+      title: "Custom Software Development",
+      description: "From concept to deployment, we build robust, scalable, and secure software solutions tailored to your specific needs. Our agile development process and expertise in CI/CD pipelines ensure we deliver high-quality code efficiently, providing you with a competitive edge in the market.",
+      ctaText: "Build Your Solution",
+      gradient: "from-pink-500 to-orange-500"
+    },
+    {
+      icon: Shield,
+      title: "QA and Testing",
+      description: "Ensure your applications are reliable, performant, and secure with our comprehensive QA and testing services. We specialize in automated testing, performance analysis, and security audits, integrating quality assurance directly into the development lifecycle to reduce bugs and accelerate release cycles.",
+      ctaText: "Ensure Quality",
+      gradient: "from-green-500 to-teal-500"
+    },
+    {
+      icon: FileText,
+      title: "Technical Writing",
+      description: "Clear, concise documentation is crucial for success. We create professional technical documentation for your products, APIs, and internal processes. Our services empower your development teams and end-users with the information they need to succeed.",
+      ctaText: "Improve Your Docs",
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: Globe,
+      title: "Web Design & Management",
+      description: "We design, build, and manage high-performance websites that are both visually appealing and technically sound. Our focus is on creating secure, fast, and SEO-friendly web experiences that are easy to manage and scale as your business grows.",
+      ctaText: "Launch Your Website",
+      gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      icon: Server,
+      title: "Domain & DNS Management",
+      description: "Build your online presence on a foundation of reliability and security. We manage your domain portfolio and configure your DNS for maximum uptime, performance, and protection against threats, ensuring your services are always available to your customers.",
+      ctaText: "Secure Your Domain",
+      gradient: "from-indigo-500 to-blue-500"
+    }
+  ];
+
+  return (
+    <div className="pt-16 min-h-screen bg-gradient-to-br from-orange-50 to-pink-50">
+      {/* Header Section */}
+      <section className="py-20 bg-gradient-to-br from-orange-500 via-pink-500 to-yellow-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Our Services
+            </h1>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+              Comprehensive technology solutions designed to accelerate your business growth 
+              and digital transformation journey in sunny South Florida.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
+              >
+                <div className="p-8">
+                  {/* Icon */}
+                  <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${service.gradient} mb-6`}>
+                    <service.icon className="h-8 w-8 text-white" />
+                  </div>
+
+                  {/* Content */}
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors">
+                    {service.title}
+                  </h3>
+                  
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  {/* CTA Button */}
+                  <div className="flex justify-start">
+                    <Button
+                      borderRadius="1.75rem"
+                      className="bg-gradient-to-r from-orange-500/10 to-pink-500/10 text-orange-600 border-orange-200 hover:from-orange-500/20 hover:to-pink-500/20"
+                      containerClassName="w-auto"
+                    >
+                      {service.ctaText}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+
+                {/* Hover Effect */}
+                <div className={`h-1 bg-gradient-to-r ${service.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}></div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Our Process
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We follow a proven methodology to ensure successful project delivery and client satisfaction.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              { step: "01", title: "Discovery", desc: "Understanding your needs and challenges" },
+              { step: "02", title: "Strategy", desc: "Developing a tailored solution approach" },
+              { step: "03", title: "Implementation", desc: "Building and deploying your solution" },
+              { step: "04", title: "Support", desc: "Ongoing maintenance and optimization" }
+            ].map((phase, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  {phase.step}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{phase.title}</h3>
+                <p className="text-gray-600">{phase.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-orange-500 via-pink-500 to-yellow-500">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Ready to Get Started?
+            </h2>
+            <p className="text-xl text-white/90 mb-8">
+              Let's discuss your project requirements and how we can help you achieve your goals.
+            </p>
+            
+            <Button
+              borderRadius="1.75rem"
+              className="bg-white text-orange-600 border-white hover:bg-gray-50"
+              containerClassName="w-auto"
+            >
+              Contact Us Today
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Services;
