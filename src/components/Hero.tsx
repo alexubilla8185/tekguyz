@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Code2, Sun, Palmtree } from 'lucide-react';
 import { Button } from './ui/moving-border';
@@ -74,22 +75,26 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white/90 backdrop-blur-md text-orange-600 border-white/20 hover:bg-white transition-all duration-300"
-              containerClassName="w-auto"
-            >
-              Get Started Today
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link to="/contact">
+              <Button
+                borderRadius="1.75rem"
+                className="bg-white/90 backdrop-blur-md text-orange-600 border-white/20 hover:bg-white transition-all duration-300"
+                containerClassName="w-auto"
+              >
+                Get Started Today
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
 
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white/10 backdrop-blur-md text-white border-white/30 hover:bg-white/20 transition-all duration-300"
-              containerClassName="w-auto"
-            >
-              View Our Services
-            </Button>
+            <Link to="/services">
+              <Button
+                borderRadius="1.75rem"
+                className="bg-white/10 backdrop-blur-md text-white border-white/30 hover:bg-white/20 transition-all duration-300"
+                containerClassName="w-auto"
+              >
+                View Our Services
+              </Button>
+            </Link>
           </motion.div>
 
           <motion.div

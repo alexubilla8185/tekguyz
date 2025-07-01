@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
@@ -52,14 +53,16 @@ const Home = () => {
                 ))}
               </div>
 
-              <Button
-                borderRadius="1.75rem"
-                className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-orange-300"
-                containerClassName="w-auto"
-              >
-                Learn More About Us
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link to="/about">
+                <Button
+                  borderRadius="1.75rem"
+                  className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-orange-300"
+                  containerClassName="w-auto"
+                >
+                  Learn More About Us
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </motion.div>
 
             <motion.div
@@ -109,21 +112,15 @@ const Home = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                borderRadius="1.75rem"
-                className="bg-white text-orange-600 border-white hover:bg-gray-50"
-                containerClassName="w-auto"
-              >
-                Schedule Consultation
-              </Button>
-              
-              <Button
-                borderRadius="1.75rem"
-                className="bg-white/10 backdrop-blur-md text-white border-white/30 hover:bg-white/20"
-                containerClassName="w-auto"
-              >
-                View Portfolio
-              </Button>
+              <Link to="/contact">
+                <Button
+                  borderRadius="1.75rem"
+                  className="bg-white text-orange-600 border-white hover:bg-gray-50"
+                  containerClassName="w-auto"
+                >
+                  Schedule Consultation
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

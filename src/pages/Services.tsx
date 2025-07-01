@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   Code2, 
@@ -108,14 +109,16 @@ const Services = () => {
 
                   {/* CTA Button */}
                   <div className="flex justify-start">
-                    <Button
-                      borderRadius="1.75rem"
-                      className="bg-gradient-to-r from-orange-500/10 to-pink-500/10 text-orange-600 border-orange-200 hover:from-orange-500/20 hover:to-pink-500/20"
-                      containerClassName="w-auto"
-                    >
-                      {service.ctaText}
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    <Link to="/contact">
+                      <Button
+                        borderRadius="1.75rem"
+                        className="bg-gradient-to-r from-orange-500/10 to-pink-500/10 text-orange-600 border-orange-200 hover:from-orange-500/20 hover:to-pink-500/20"
+                        containerClassName="w-auto"
+                      >
+                        {service.ctaText}
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
                   </div>
                 </div>
 
@@ -187,14 +190,16 @@ const Services = () => {
               Let's discuss your project requirements and how we can help you achieve your goals.
             </p>
             
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white text-orange-600 border-white hover:bg-gray-50"
-              containerClassName="w-auto"
-            >
-              Contact Us Today
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link to="/contact">
+              <Button
+                borderRadius="1.75rem"
+                className="bg-white text-orange-600 border-white hover:bg-gray-50"
+                containerClassName="w-auto"
+              >
+                Contact Us Today
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Users, Target, Award, Linkedin, Twitter, Github } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
@@ -127,13 +128,15 @@ const About = () => {
                 value that drives measurable business outcomes and long-term growth under the sunshine.
               </p>
               
-              <Button
-                borderRadius="1.75rem"
-                className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-orange-300"
-                containerClassName="w-auto"
-              >
-                Our Services
-              </Button>
+              <Link to="/services">
+                <Button
+                  borderRadius="1.75rem"
+                  className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-orange-300"
+                  containerClassName="w-auto"
+                >
+                  Our Services
+                </Button>
+              </Link>
             </motion.div>
 
             <motion.div
@@ -268,13 +271,15 @@ const About = () => {
               Ready to transform your technology landscape? Our South Florida team is here to help you succeed.
             </p>
             
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white text-orange-600 border-white hover:bg-gray-50"
-              containerClassName="w-auto"
-            >
-              Get In Touch
-            </Button>
+            <Link to="/contact">
+              <Button
+                borderRadius="1.75rem"
+                className="bg-white text-orange-600 border-white hover:bg-gray-50"
+                containerClassName="w-auto"
+              >
+                Get In Touch
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
