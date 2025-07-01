@@ -8,7 +8,8 @@ import {
   FileText, 
   Globe, 
   Server,
-  ArrowRight
+  ArrowRight,
+  CheckCircle
 } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
 
@@ -107,8 +108,8 @@ const Services = () => {
                     {service.description}
                   </p>
 
-                  {/* CTA Button */}
-                  <div className="flex justify-start">
+                  {/* CTA Button - Now Center Aligned */}
+                  <div className="flex justify-center">
                     <Link to="/contact">
                       <Button
                         borderRadius="1.75rem"
@@ -150,10 +151,10 @@ const Services = () => {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Discovery", desc: "Understanding your needs and challenges" },
-              { step: "02", title: "Strategy", desc: "Developing a tailored solution approach" },
-              { step: "03", title: "Implementation", desc: "Building and deploying your solution" },
-              { step: "04", title: "Support", desc: "Ongoing maintenance and optimization" }
+              { title: "Discovery", desc: "Understanding your needs and challenges" },
+              { title: "Strategy", desc: "Developing a tailored solution approach" },
+              { title: "Implementation", desc: "Building and deploying your solution" },
+              { title: "Support", desc: "Ongoing maintenance and optimization" }
             ].map((phase, index) => (
               <motion.div
                 key={index}
@@ -163,8 +164,8 @@ const Services = () => {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                  {phase.step}
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{phase.title}</h3>
                 <p className="text-gray-600">{phase.desc}</p>

@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
+          <div>
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <div className="flex items-center space-x-1">
                 <Code className="h-8 w-8 text-orange-500" />
@@ -43,9 +43,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-white transition-colors">
@@ -65,43 +64,6 @@ const Footer = () => {
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
                   Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
-                  Tech Consulting
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
-                  Custom Development
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
-                  QA & Testing
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
-                  Technical Writing
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
-                  Web Design
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
-                  Domain Management
                 </Link>
               </li>
             </ul>
