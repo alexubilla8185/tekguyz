@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Clock, Send, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
 import { useToast } from '../hooks/use-toast';
 
@@ -110,12 +110,6 @@ const Contact = () => {
                     title: "Phone", 
                     info: "+1 (305) 857-5258",
                     href: "tel:+13058575258"
-                  },
-                  { 
-                    icon: MapPin, 
-                    title: "Address", 
-                    info: "123 Ocean Drive, Miami Beach, FL 33139",
-                    href: null
                   },
                   { 
                     icon: Clock, 

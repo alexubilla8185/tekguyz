@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Sun, Palmtree, Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Code, Sun, Palmtree, Mail, Phone, Linkedin, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -35,10 +35,6 @@ const Footer = () => {
                 <a href="tel:+13058575258" className="text-gray-300 hover:text-white transition-colors">
                   +1 (305) 857-5258
                 </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-orange-500" />
-                <span className="text-gray-300">123 Ocean Drive, Miami Beach, FL 33139</span>
               </div>
             </div>
           </div>
