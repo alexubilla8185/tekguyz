@@ -33,8 +33,8 @@ const Home = () => {
                 Why Choose TEKGUYZ?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                We combine deep technical expertise with South Florida's innovative spirit to deliver 
-                solutions that not only work flawlessly but drive real business value under the sunshine.
+                We combine deep technical expertise with innovative thinking to deliver 
+                solutions that not only work flawlessly but drive real business value for your organization.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -108,7 +108,7 @@ const Home = () => {
               Ready to Transform Your Technology?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Let's discuss how we can help accelerate your digital transformation journey in sunny South Florida.
+              Let's discuss how we can help accelerate your digital transformation journey and drive meaningful results.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

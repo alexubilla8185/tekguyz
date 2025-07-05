@@ -65,8 +65,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
-            Your South Florida tech partner, delivering cutting-edge DevOps solutions, 
-            custom software development, and expert consulting to accelerate your business growth under the sunshine.
+            Your trusted tech partner, delivering cutting-edge DevOps solutions, 
+            custom software development, and expert consulting to accelerate your business growth.
           </motion.p>
 
           <motion.div

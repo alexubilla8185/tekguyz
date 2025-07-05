@@ -72,7 +72,7 @@ const Contact = () => {
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Ready to start your digital transformation? Let's discuss how we can help 
-              accelerate your business growth with our South Florida technology solutions.
+              accelerate your business growth with our technology solutions.
             </p>
           </motion.div>
         </div>
@@ -94,7 +94,7 @@ const Contact = () => {
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Whether you need a consultation, have questions about our services, 
-                or want to discuss a specific project, we're here to help you succeed in sunny South Florida.
+                or want to discuss a specific project, we're here to help you succeed.
               </p>
 
               <div className="space-y-6">

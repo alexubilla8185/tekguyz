@@ -9,37 +9,37 @@ const About = () => {
     {
       name: "Carlos Rodriguez",
       title: "Lead DevOps Engineer",
-      bio: "10+ years of cloud infrastructure expertise with AWS, Azure, and GCP. Specializes in containerization, CI/CD automation, and scalable system architecture design. Miami native with a passion for innovation.",
+      bio: "10+ years of cloud infrastructure expertise with AWS, Azure, and GCP. Specializes in containerization, CI/CD automation, and scalable system architecture design. Passionate about innovation and helping teams succeed.",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       name: "Sofia Martinez",
       title: "Principal Cloud Architect",
-      bio: "Former tech lead at Fortune 500 companies. Expert in microservices architecture, Kubernetes orchestration, and enterprise-level digital transformation strategies. Loves the South Florida tech scene.",
+      bio: "Former tech lead at Fortune 500 companies. Expert in microservices architecture, Kubernetes orchestration, and enterprise-level digital transformation strategies. Dedicated to delivering exceptional results.",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       name: "Alex Thompson",
       title: "Senior Full-Stack Developer",
-      bio: "Passionate about creating scalable web applications. Specialized in React, Node.js, and modern JavaScript frameworks with expertise in database optimization. Enjoys coding by the beach.",
+      bio: "Passionate about creating scalable web applications. Specialized in React, Node.js, and modern JavaScript frameworks with expertise in database optimization and performance tuning.",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       name: "Maria Gonzalez",
       title: "QA Engineering Manager",
-      bio: "Quality assurance expert with extensive experience in automated testing frameworks, performance optimization, and security auditing for enterprise applications. Fort Lauderdale local.",
+      bio: "Quality assurance expert with extensive experience in automated testing frameworks, performance optimization, and security auditing for enterprise applications. Committed to excellence.",
       image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       name: "Jordan Kim",
       title: "Technical Writer & Documentation Lead",
-      bio: "Transforms complex technical concepts into clear, actionable documentation. Specializes in API documentation, user guides, and developer experience optimization. Sunshine State enthusiast.",
+      bio: "Transforms complex technical concepts into clear, actionable documentation. Specializes in API documentation, user guides, and developer experience optimization.",
       image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
     {
       name: "Roberto Silva",
       title: "Infrastructure Security Specialist",
-      bio: "Cybersecurity expert focused on DevSecOps practices, cloud security architecture, and compliance frameworks for regulated industries. Proud South Florida resident.",
+      bio: "Cybersecurity expert focused on DevSecOps practices, cloud security architecture, and compliance frameworks for regulated industries. Dedicated to keeping systems secure.",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400"
     }
   ];
@@ -48,7 +48,7 @@ const About = () => {
     {
       icon: Target,
       title: "Innovation First",
-      description: "We stay ahead of technology trends to provide cutting-edge solutions that give our clients a competitive advantage in the sunshine state."
+      description: "We stay ahead of technology trends to provide cutting-edge solutions that give our clients a competitive advantage in their markets."
     },
     {
       icon: Users,
@@ -77,7 +77,7 @@ const About = () => {
               About TEKGUYZ
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12">
-              We're a team of passionate technologists based in sunny South Florida, dedicated to helping businesses 
+              We're a team of passionate technologists dedicated to helping businesses 
               leverage the full power of modern technology and DevOps practices.
             </p>
           </motion.div>
@@ -121,11 +121,11 @@ const About = () => {
                 At TEKGUYZ, we believe that technology should be an enabler, not a barrier. 
                 Our mission is to bridge the gap between complex technical solutions and 
                 business objectives, making advanced technology accessible and actionable 
-                for organizations of all sizes in South Florida and beyond.
+                for organizations of all sizes.
               </p>
               <p className="text-lg text-gray-600 mb-8">
                 We're committed to delivering not just technical excellence, but strategic 
-                value that drives measurable business outcomes and long-term growth under the sunshine.
+                value that drives measurable business outcomes and long-term growth for our clients.
               </p>
               
               <Link to="/services">
@@ -209,8 +209,8 @@ const About = () => {
               Our Team
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the South Florida experts who bring decades of combined experience to every project, 
-              ensuring your technology initiatives succeed under the sunshine.
+              Meet the experts who bring decades of combined experience to every project, 
+              ensuring your technology initiatives succeed with professional excellence.
             </p>
           </motion.div>
 
@@ -268,7 +268,7 @@ const About = () => {
               Let's Work Together
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Ready to transform your technology landscape? Our South Florida team is here to help you succeed.
+              Ready to transform your technology landscape? Our team is here to help you succeed.
             </p>
             
             <Link to="/contact">

@@ -74,7 +74,7 @@ const Services = () => {
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Comprehensive technology solutions designed to accelerate your business growth 
-              and digital transformation journey in sunny South Florida.
+              and digital transformation journey.
             </p>
           </motion.div>
         </div>
