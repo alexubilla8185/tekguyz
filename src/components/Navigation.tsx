@@ -28,14 +28,16 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-gradient-to-r from-orange-50/90 to-pink-50/90 backdrop-blur-md border-b border-orange-200/50 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" onClick={handleNavClick} className="flex items-center space-x-2">
+          {/* Logo - Flexible width */}
+          <Link to="/" onClick={handleNavClick} className="flex items-center space-x-2 flex-shrink-0 min-w-0">
             <div className="flex items-center space-x-1">
-              <Code className="h-8 w-8 text-orange-600" />
-              <Sun className="h-6 w-6 text-yellow-500" />
-              <Palmtree className="h-6 w-6 text-green-500" />
+              <Code className="h-6 w-6 sm:h-8 sm:w-8 text-orange-600" />
+              <Sun className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-500" />
+              <Palmtree className="h-5 w-5 sm:h-6 sm:w-6 text-green-500" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">TEKGUYZ</span>
+            <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent truncate">
+              TEKGUYZ
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -62,11 +64,13 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button - Fixed width and proper spacing */}
+          <div className="md:hidden flex-shrink-0">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 transition-colors duration-200"
+              aria-expanded="false"
+              aria-label="Toggle navigation menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
