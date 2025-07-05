@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Clock, Send, CheckCircle, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
 import { useToast } from '../hooks/use-toast';
 
@@ -97,7 +97,7 @@ const Contact = () => {
                 or want to discuss a specific project, we're here to help you succeed.
               </p>
 
-              <div className="space-y-6">
+              <div className="space-y-6 mb-8">
                 {[
                   { 
                     icon: Mail, 
@@ -137,6 +137,44 @@ const Contact = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              {/* Social Media */}
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-4">Connect With Us</h3>
+                <div className="space-y-4">
+                  {[
+                    {
+                      icon: Linkedin,
+                      title: "LinkedIn",
+                      href: "https://linkedin.com/company/tekguyz"
+                    },
+                    {
+                      icon: Instagram,
+                      title: "Instagram", 
+                      href: "https://instagram.com/tekguyz"
+                    },
+                    {
+                      icon: Facebook,
+                      title: "Facebook",
+                      href: "https://facebook.com/tekguyz"
+                    }
+                  ].map((social, index) => (
+                    <div key={index} className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <social.icon className="h-6 w-6 text-white" />
+                      </div>
+                      <a 
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-orange-600 transition-colors font-medium"
+                      >
+                        {social.title}
+                      </a>
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
 
