@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
@@ -125,6 +126,8 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

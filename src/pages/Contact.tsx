@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, Clock, Send, CheckCircle, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
 import { useToast } from '../hooks/use-toast';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -307,6 +308,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

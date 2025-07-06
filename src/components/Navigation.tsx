@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X, Code, Sun, Palmtree } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,20 +28,17 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-gradient-to-r from-orange-50/90 to-pink-50/90 backdrop-blur-md border-b border-orange-200/50 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+          {/* Logo - Using the new SVG logo */}
           <Link 
             to="/" 
             onClick={handleNavClick} 
             className="flex items-center space-x-2"
           >
-            <div className="flex items-center space-x-1">
-              <Code className="h-8 w-8 text-orange-600" />
-              <Sun className="h-6 w-6 text-yellow-500" />
-              <Palmtree className="h-6 w-6 text-green-500" />
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
-              TEKGUYZ
-            </span>
+            <img 
+              src="/logo.svg" 
+              alt="TEKGUYZ Logo" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
