@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Users, Target, Award, Linkedin, Twitter, Github } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
-import Footer from '../components/Footer';
 
 const About = () => {
   const teamMembers = [
@@ -284,8 +283,6 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

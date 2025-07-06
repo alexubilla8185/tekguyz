@@ -12,7 +12,6 @@ import {
   CheckCircle
 } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
-import Footer from '../components/Footer';
 
 const Services = () => {
   const services = [
@@ -205,8 +204,6 @@ const Services = () => {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
