@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Code, Sun, Palmtree, Mail, Phone, Linkedin, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,11 +10,18 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-6">
-              <img 
-                src="/logo.svg" 
-                alt="TEKGUYZ Logo" 
-                className="h-12 w-auto filter brightness-0 invert"
-              />
+              <div className="flex items-center space-x-1">
+                <div className="p-3 bg-white/20 rounded-full backdrop-blur-sm">
+                  <Code className="h-6 w-6 text-orange-500" />
+                </div>
+                <div className="p-3 bg-yellow-300/30 rounded-full backdrop-blur-sm">
+                  <Sun className="h-5 w-5 text-yellow-500" />
+                </div>
+                <div className="p-3 bg-green-400/30 rounded-full backdrop-blur-sm">
+                  <Palmtree className="h-5 w-5 text-green-500" />
+                </div>
+              </div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">TEKGUYZ</span>
             </Link>
             
             <p className="text-gray-300 mb-8 max-w-lg leading-relaxed">

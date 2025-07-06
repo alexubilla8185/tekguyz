@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Code, Sun, Palmtree } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,21 +28,30 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-gradient-to-r from-orange-50/90 to-pink-50/90 backdrop-blur-md border-b border-orange-200/50 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo - Ensuring full width visibility */}
+          {/* Logo - Back to simplified version with proper spacing */}
           <Link 
             to="/" 
             onClick={handleNavClick} 
-            className="flex items-center space-x-2 flex-shrink-0"
+            className="flex items-center space-x-2 flex-shrink-0 min-w-0"
           >
-            <img 
-              src="/logo.svg" 
-              alt="TEKGUYZ Logo" 
-              className="h-10 w-auto min-w-[140px]"
-            />
+            <div className="flex items-center space-x-1 flex-shrink-0">
+              <div className="p-2 bg-white/20 rounded-full backdrop-blur-sm">
+                <Code className="h-5 w-5 sm:h-6 sm:w-6 text-orange-600" />
+              </div>
+              <div className="p-2 bg-yellow-300/30 rounded-full backdrop-blur-sm">
+                <Sun className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-500" />
+              </div>
+              <div className="p-2 bg-green-400/30 rounded-full backdrop-blur-sm">
+                <Palmtree className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
+              </div>
+            </div>
+            <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent whitespace-nowrap">
+              TEKGUYZ
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 flex-shrink-0">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -66,7 +75,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex-shrink-0">
+          <div className="md:hidden flex-shrink-0 ml-2">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 transition-colors duration-200"
