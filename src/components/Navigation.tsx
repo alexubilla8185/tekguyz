@@ -68,7 +68,7 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile menu button - Fixed positioning */}
+          {/* Mobile menu button - Fixed positioning with proper text color */}
           <div className="md:hidden flex-shrink-0 ml-2">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -76,7 +76,11 @@ const Navigation = () => {
               aria-expanded="false"
               aria-label="Toggle navigation menu"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6 text-gray-700" />
+              ) : (
+                <Menu className="h-6 w-6 text-gray-700" />
+              )}
             </button>
           </div>
         </div>
