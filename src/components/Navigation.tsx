@@ -28,16 +28,16 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-gradient-to-r from-orange-50/90 to-pink-50/90 backdrop-blur-md border-b border-orange-200/50 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo - Using the new SVG logo */}
+          {/* Logo - Ensuring full width visibility */}
           <Link 
             to="/" 
             onClick={handleNavClick} 
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 flex-shrink-0"
           >
             <img 
               src="/logo.svg" 
               alt="TEKGUYZ Logo" 
-              className="h-10 w-auto"
+              className="h-10 w-auto min-w-[140px]"
             />
           </Link>
 
@@ -66,7 +66,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex-shrink-0">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 transition-colors duration-200"
