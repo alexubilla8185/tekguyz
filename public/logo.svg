@@ -1,0 +1,44 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon elements -->
+  <g transform="translate(10, 15)">
+    <!-- Code icon -->
+    <rect x="0" y="0" width="24" height="24" rx="6" fill="url(#orangeGradient)" />
+    <path d="m9 12 2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="m21 12-2 2-4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Sun icon -->
+    <circle cx="32" cy="12" r="8" fill="url(#yellowGradient)" />
+    <path d="M32 4v2M32 20v2M40 12h2M22 12h2M37.66 6.34l-1.41 1.41M26.75 16.25l-1.41 1.41M37.66 17.66l-1.41-1.41M26.75 7.75l-1.41-1.41" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- Palm tree icon -->
+    <rect x="44" y="0" width="16" height="24" rx="4" fill="url(#greenGradient)" />
+    <path d="M52 20v4M48 8c0-2 2-4 4-4s4 2 4 4M46 12c-2 0-4-2-4-4s2-4 4-4M58 12c2 0 4-2 4-4s-2-4-4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  
+  <!-- TEKGUYZ text -->
+  <text x="80" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#textGradient)">TEKGUYZ</text>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eab308;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ca8a04;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
