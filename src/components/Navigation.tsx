@@ -68,18 +68,18 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile menu button - Fixed positioning with black icon color */}
+          {/* Mobile menu button - Fixed with explicit black color */}
           <div className="md:hidden flex-shrink-0 ml-2">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center w-10 h-10 rounded-md text-gray-700 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 transition-colors duration-200"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-md text-black hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 transition-colors duration-200"
               aria-expanded="false"
               aria-label="Toggle navigation menu"
             >
               {isOpen ? (
-                <X className="h-6 w-6 text-gray-900" />
+                <X className="h-6 w-6 text-black" />
               ) : (
-                <Menu className="h-6 w-6 text-gray-900" />
+                <Menu className="h-6 w-6 text-black" />
               )}
             </button>
           </div>
