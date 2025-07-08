@@ -27,14 +27,14 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 w-full bg-gradient-to-r from-orange-50/90 to-pink-50/90 backdrop-blur-md border-b border-orange-200/50 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 w-full">
+        <div className="flex justify-between items-center h-16">
           {/* Logo - Back to simplified version with proper spacing */}
           <Link 
             to="/" 
             onClick={handleNavClick} 
-            className="flex items-center space-x-2 flex-shrink-0 min-w-0 max-w-[calc(100vw-80px)]"
+            className="flex items-center space-x-2 flex-shrink-0"
           >
-            <div className="flex items-center space-x-1 flex-shrink-0 min-w-0">
+            <div className="flex items-center space-x-1 flex-shrink-0">
               <div className="p-2 bg-white/20 rounded-full backdrop-blur-sm">
                 <Code className="h-5 w-5 sm:h-6 sm:w-6 text-orange-600" />
               </div>
@@ -45,7 +45,7 @@ const Navigation = () => {
                 <Palmtree className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
               </div>
             </div>
-            <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent whitespace-nowrap overflow-hidden text-ellipsis">
+            <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent whitespace-nowrap">
               TEKGUYZ
             </span>
           </Link>
@@ -75,10 +75,10 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex-shrink-0 ml-2 w-12 flex justify-end">
+          <div className="md:hidden flex-shrink-0">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 transition-colors duration-200 w-10 h-10"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 transition-colors duration-200"
               aria-expanded="false"
               aria-label="Toggle navigation menu"
             >
@@ -93,7 +93,7 @@ const Navigation = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden bg-white/95 backdrop-blur-md border-t border-orange-200/50 absolute left-0 right-0 top-full z-50"
+            className="md:hidden bg-white/95 backdrop-blur-md border-t border-orange-200/50"
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
