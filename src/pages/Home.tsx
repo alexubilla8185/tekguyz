@@ -81,7 +81,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800">
+      <section className="py-20 bg-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -95,7 +95,7 @@ const Home = () => {
               <Link to="/contact">
                 <Button
                   borderRadius="1.75rem"
-                  className="bg-white text-slate-800 border-white hover:bg-gray-50"
+                  className="bg-white text-blue-600 border-white hover:bg-gray-50"
                   containerClassName="w-auto"
                 >
                   Schedule Consultation
