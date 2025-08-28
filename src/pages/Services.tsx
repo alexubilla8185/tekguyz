@@ -60,15 +60,11 @@ const Services = () => {
   ];
 
   return (
-    <div className="pt-16 min-h-screen bg-gradient-to-br from-orange-50 to-pink-50">
+    <div className="pt-16 min-h-screen bg-white">
       {/* Header Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900">
+      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Our Services
             </h1>
@@ -76,7 +72,7 @@ const Services = () => {
               Comprehensive technology solutions designed to accelerate your business growth 
               and digital transformation journey.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -85,12 +81,8 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
               >
                 <div className="p-8">
@@ -113,7 +105,7 @@ const Services = () => {
                     <Link to="/contact">
                       <Button
                         borderRadius="1.75rem"
-                        className="bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-300"
+                        className="bg-gray-100 hover:bg-gray-200 text-gray-700 border-gray-300"
                         containerClassName="w-auto"
                       >
                         {service.ctaText}
@@ -125,7 +117,7 @@ const Services = () => {
 
                 {/* Hover Effect */}
                 <div className={`h-1 bg-gradient-to-r ${service.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}></div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -134,20 +126,14 @@ const Services = () => {
       {/* Process Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Our Process
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We follow a proven methodology to ensure successful project delivery and client satisfaction.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
@@ -156,12 +142,8 @@ const Services = () => {
               { title: "Implementation", desc: "Building and deploying your solution" },
               { title: "Support", desc: "Ongoing maintenance and optimization" }
             ].map((phase, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
                 className="text-center"
               >
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -169,21 +151,16 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{phase.title}</h3>
                 <p className="text-gray-600">{phase.desc}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-slate-800 to-slate-900">
+      <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Get Started?
             </h2>
@@ -201,7 +178,7 @@ const Services = () => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

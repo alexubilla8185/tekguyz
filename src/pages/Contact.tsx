@@ -58,15 +58,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-16 min-h-screen bg-slate-50">
+    <div className="pt-16 min-h-screen bg-gray-50">
       {/* Header Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900">
+      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Get In Touch
             </h1>
@@ -74,7 +70,7 @@ const Contact = () => {
               Ready to start your digital transformation? Let's discuss how we can help 
               accelerate your business growth with our technology solutions.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -83,12 +79,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
+            <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Let's Start a Conversation
               </h2>
@@ -176,16 +167,10 @@ const Contact = () => {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Contact Form */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-lg p-8"
-            >
+            <div className="bg-white rounded-2xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -303,7 +288,7 @@ const Contact = () => {
                   )}
                 </Button>
               </form>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
