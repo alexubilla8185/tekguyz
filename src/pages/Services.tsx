@@ -20,49 +20,49 @@ const Services = () => {
       title: "Tech Consulting",
       description: "We provide strategic guidance to align your technology with your business goals. Our experts help you navigate complex challenges, from cloud adoption and infrastructure optimization to implementing a full-scale DevOps transformation. We create a clear roadmap for innovation, scalability, and long-term success.",
       ctaText: "Plan Your Strategy",
-      gradient: "from-orange-500 to-yellow-500"
+      gradient: "from-blue-600 to-blue-700"
     },
     {
       icon: Code2,
       title: "Custom Software Development",
       description: "From concept to deployment, we build robust, scalable, and secure software solutions tailored to your specific needs. Our agile development process and expertise in CI/CD pipelines ensure we deliver high-quality code efficiently, providing you with a competitive edge in the market.",
       ctaText: "Build Your Solution",
-      gradient: "from-pink-500 to-orange-500"
+      gradient: "from-slate-600 to-slate-700"
     },
     {
       icon: Shield,
       title: "QA and Testing",
       description: "Ensure your applications are reliable, performant, and secure with our comprehensive QA and testing services. We specialize in automated testing, performance analysis, and security audits, integrating quality assurance directly into the development lifecycle to reduce bugs and accelerate release cycles.",
       ctaText: "Ensure Quality",
-      gradient: "from-green-500 to-teal-500"
+      gradient: "from-emerald-600 to-emerald-700"
     },
     {
       icon: FileText,
       title: "Technical Writing",
       description: "Clear, concise documentation is crucial for success. We create professional technical documentation for your products, APIs, and internal processes. Our services empower your development teams and end-users with the information they need to succeed.",
       ctaText: "Improve Your Docs",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-cyan-600 to-cyan-700"
     },
     {
       icon: Globe,
       title: "Web Design & Management",
       description: "We design, build, and manage high-performance websites that are both visually appealing and technically sound. Our focus is on creating secure, fast, and SEO-friendly web experiences that are easy to manage and scale as your business grows.",
       ctaText: "Launch Your Website",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-indigo-600 to-indigo-700"
     },
     {
       icon: Server,
       title: "Domain & DNS Management",
       description: "Build your online presence on a foundation of reliability and security. We manage your domain portfolio and configure your DNS for maximum uptime, performance, and protection against threats, ensuring your services are always available to your customers.",
       ctaText: "Secure Your Domain",
-      gradient: "from-indigo-500 to-blue-500"
+      gradient: "from-violet-600 to-violet-700"
     }
   ];
 
   return (
     <div className="pt-16 min-h-screen bg-gradient-to-br from-orange-50 to-pink-50">
       {/* Header Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-500 via-pink-500 to-yellow-500">
+      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -113,7 +113,7 @@ const Services = () => {
                     <Link to="/contact">
                       <Button
                         borderRadius="1.75rem"
-                        className="bg-gradient-to-r from-orange-500/10 to-pink-500/10 text-orange-600 border-orange-200 hover:from-orange-500/20 hover:to-pink-500/20"
+                        className="bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-300"
                         containerClassName="w-auto"
                       >
                         {service.ctaText}
@@ -164,7 +164,7 @@ const Services = () => {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{phase.title}</h3>
@@ -176,7 +176,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 via-pink-500 to-yellow-500">
+      <section className="py-20 bg-gradient-to-r from-slate-800 to-slate-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -194,7 +194,7 @@ const Services = () => {
             <Link to="/contact">
               <Button
                 borderRadius="1.75rem"
-                className="bg-white text-orange-600 border-white hover:bg-gray-50"
+                className="bg-white text-slate-800 border-white hover:bg-gray-50"
                 containerClassName="w-auto"
               >
                 Contact Us Today

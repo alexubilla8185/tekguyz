@@ -20,7 +20,7 @@ const Home = () => {
       <Hero />
       
       {/* Features Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 to-pink-50">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -56,7 +56,7 @@ const Home = () => {
               <Link to="/about">
                 <Button
                   borderRadius="1.75rem"
-                  className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-orange-300"
+                  className="bg-blue-600 hover:bg-blue-700 text-white border-blue-500"
                   containerClassName="w-auto"
                 >
                   Learn More About Us
@@ -72,7 +72,7 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="bg-gradient-to-br from-orange-100 to-pink-100 p-8 rounded-2xl">
+              <div className="bg-slate-100 p-8 rounded-2xl">
                 <img
                   src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Team collaboration"
@@ -81,11 +81,11 @@ const Home = () => {
                 
                 <div className="mt-6 grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                    <div className="text-2xl font-bold text-orange-600">25+</div>
+                    <div className="text-2xl font-bold text-blue-600">25+</div>
                     <div className="text-sm text-gray-600">Years Experience</div>
                   </div>
                   <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                    <div className="text-2xl font-bold text-pink-600">100+</div>
+                    <div className="text-2xl font-bold text-slate-600">100+</div>
                     <div className="text-sm text-gray-600">Happy Clients</div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 via-pink-500 to-yellow-500">
+      <section className="py-20 bg-gradient-to-r from-slate-800 to-slate-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -115,7 +115,7 @@ const Home = () => {
               <Link to="/contact">
                 <Button
                   borderRadius="1.75rem"
-                  className="bg-white text-orange-600 border-white hover:bg-gray-50"
+                  className="bg-white text-slate-800 border-white hover:bg-gray-50"
                   containerClassName="w-auto"
                 >
                   Schedule Consultation

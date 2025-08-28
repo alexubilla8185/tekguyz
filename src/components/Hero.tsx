@@ -1,123 +1,109 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, Code2, Sun, Palmtree } from 'lucide-react';
+import { ArrowRight, CheckCircle, Shield, Zap } from 'lucide-react';
 import { Button } from './ui/moving-border';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-400 via-pink-500 to-yellow-400 relative overflow-hidden">
-      {/* Background Animation */}
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+      {/* Subtle background pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJtMzYgMzQgLTIgMiAtMiAtMiAyIC0yIDIgMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
-        {/* Floating elements */}
-        <motion.div
-          animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-20 left-10 w-16 h-16 bg-white/20 rounded-full backdrop-blur-sm"
-        />
-        <motion.div
-          animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-40 right-20 w-12 h-12 bg-yellow-300/30 rounded-full backdrop-blur-sm"
-        />
-        <motion.div
-          animate={{ y: [0, -15, 0], x: [0, 10, 0] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-32 left-1/4 w-20 h-20 bg-pink-300/20 rounded-full backdrop-blur-sm"
-        />
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0ibTM2IDM0IC0yIDIgLTIgLTIgMiAtMiAyIDJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
+        {/* Subtle gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-slate-900/10"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="flex justify-center space-x-4 mb-8"
-          >
-            <div className="p-3 bg-white/20 rounded-full backdrop-blur-sm">
-              <Code2 className="h-8 w-8 text-white" />
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Content */}
+          <div>
+            <div className="mb-6">
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-900/20 text-blue-300 border border-blue-800/30">
+                <Shield className="h-4 w-4 mr-2" />
+                Trusted Technology Partner
+              </span>
             </div>
-            <div className="p-3 bg-yellow-300/30 rounded-full backdrop-blur-sm">
-              <Sun className="h-8 w-8 text-white" />
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Enterprise-Grade
+              <span className="text-blue-400 block">
+                DevOps Solutions
+              </span>
+            </h1>
+
+            <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
+              Transform your infrastructure with cutting-edge DevOps practices, 
+              custom software development, and strategic technology consulting 
+              that drives measurable business results.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Link to="/contact">
+                <Button
+                  borderRadius="0.5rem"
+                  className="bg-blue-600 hover:bg-blue-700 text-white border-blue-500 px-8 py-3 font-semibold"
+                  containerClassName="w-auto"
+                >
+                  Schedule Consultation
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+
+              <Link to="/services">
+                <Button
+                  borderRadius="0.5rem"
+                  className="bg-slate-800 hover:bg-slate-700 text-white border-slate-600 px-8 py-3 font-semibold"
+                  containerClassName="w-auto"
+                >
+                  View Services
+                </Button>
+              </Link>
             </div>
-            <div className="p-3 bg-green-400/30 rounded-full backdrop-blur-sm">
-              <Palmtree className="h-8 w-8 text-white" />
-            </div>
-          </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
-          >
-            Transform Your
-            <span className="bg-gradient-to-r from-yellow-200 via-orange-200 to-pink-200 bg-clip-text text-transparent">
-              {" "}Digital Future
-            </span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed"
-          >
-            Your trusted tech partner, delivering cutting-edge DevOps solutions, 
-            custom software development, and expert consulting to accelerate your business growth.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-          >
-            <Link to="/contact">
-              <Button
-                borderRadius="1.75rem"
-                className="bg-white/90 backdrop-blur-md text-orange-600 border-white/20 hover:bg-white transition-all duration-300"
-                containerClassName="w-auto"
-              >
-                Get Started Today
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-
-            <Link to="/services">
-              <Button
-                borderRadius="1.75rem"
-                className="bg-white/10 backdrop-blur-md text-white border-white/30 hover:bg-white/20 transition-all duration-300"
-                containerClassName="w-auto"
-              >
-                View Our Services
-              </Button>
-            </Link>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
-          >
-            {[
-              { number: "50+", label: "Projects Delivered" },
-              { number: "98%", label: "Client Satisfaction" },
-              { number: "24/7", label: "Support Available" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                  {stat.number}
+            {/* Key Benefits */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                { icon: CheckCircle, text: "99.9% Uptime Guarantee" },
+                { icon: Zap, text: "Rapid Deployment" },
+                { icon: Shield, text: "Enterprise Security" },
+                { icon: ArrowRight, text: "24/7 Support" }
+              ].map((benefit, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                    <benefit.icon className="h-4 w-4 text-blue-400" />
+                  </div>
+                  <span className="text-slate-300 text-sm font-medium">{benefit.text}</span>
                 </div>
-                <div className="text-white/80 text-sm uppercase tracking-wider">
-                  {stat.label}
-                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Column - Stats/Visual */}
+          <div className="relative">
+            <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8">
+              <h3 className="text-xl font-semibold text-white mb-6">Proven Results</h3>
+              
+              <div className="space-y-6">
+                {[
+                  { metric: "50+", label: "Enterprise Clients", sublabel: "Fortune 500 companies" },
+                  { metric: "99.9%", label: "System Uptime", sublabel: "Industry-leading reliability" },
+                  { metric: "25+", label: "Years Experience", sublabel: "Deep technical expertise" },
+                  { metric: "24/7", label: "Support Coverage", sublabel: "Global support team" }
+                ].map((stat, index) => (
+                  <div key={index} className="flex items-center justify-between py-3 border-b border-slate-700/50 last:border-b-0">
+                    <div>
+                      <div className="text-2xl font-bold text-white">{stat.metric}</div>
+                      <div className="text-slate-300 font-medium">{stat.label}</div>
+                      <div className="text-slate-400 text-sm">{stat.sublabel}</div>
+                    </div>
+                    <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                      <CheckCircle className="h-6 w-6 text-blue-400" />
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -65,7 +65,7 @@ const About = () => {
   return (
     <div className="pt-16 min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-500 via-pink-500 to-yellow-500">
+      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -105,7 +105,7 @@ const About = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 to-pink-50">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -131,7 +131,7 @@ const About = () => {
               <Link to="/services">
                 <Button
                   borderRadius="1.75rem"
-                  className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-orange-300"
+                  className="bg-blue-600 hover:bg-blue-700 text-white border-blue-500"
                   containerClassName="w-auto"
                 >
                   Our Services
@@ -184,7 +184,7 @@ const About = () => {
                 viewport={{ once: true }}
                 className="bg-gradient-to-br from-orange-50 to-pink-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
                   <value.icon className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
@@ -196,7 +196,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 to-pink-50">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -234,18 +234,18 @@ const About = () => {
                 
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-orange-600 font-medium mb-3">{member.title}</p>
+                  <p className="text-blue-600 font-medium mb-3">{member.title}</p>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">{member.bio}</p>
                   
                   <div className="flex space-x-3">
-                    <button className="w-8 h-8 bg-gradient-to-r from-orange-100 to-pink-100 hover:from-orange-200 hover:to-pink-200 rounded-full flex items-center justify-center transition-colors">
-                      <Linkedin className="h-4 w-4 text-orange-600" />
+                    <button className="w-8 h-8 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center transition-colors">
+                      <Linkedin className="h-4 w-4 text-slate-600" />
                     </button>
-                    <button className="w-8 h-8 bg-gradient-to-r from-orange-100 to-pink-100 hover:from-orange-200 hover:to-pink-200 rounded-full flex items-center justify-center transition-colors">
-                      <Twitter className="h-4 w-4 text-orange-600" />
+                    <button className="w-8 h-8 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center transition-colors">
+                      <Twitter className="h-4 w-4 text-slate-600" />
                     </button>
-                    <button className="w-8 h-8 bg-gradient-to-r from-orange-100 to-pink-100 hover:from-orange-200 hover:to-pink-200 rounded-full flex items-center justify-center transition-colors">
-                      <Github className="h-4 w-4 text-orange-600" />
+                    <button className="w-8 h-8 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center transition-colors">
+                      <Github className="h-4 w-4 text-slate-600" />
                     </button>
                   </div>
                 </div>
@@ -256,7 +256,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 via-pink-500 to-yellow-500">
+      <section className="py-20 bg-gradient-to-r from-slate-800 to-slate-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -274,7 +274,7 @@ const About = () => {
             <Link to="/contact">
               <Button
                 borderRadius="1.75rem"
-                className="bg-white text-orange-600 border-white hover:bg-gray-50"
+                className="bg-white text-slate-800 border-white hover:bg-gray-50"
                 containerClassName="w-auto"
               >
                 Get In Touch

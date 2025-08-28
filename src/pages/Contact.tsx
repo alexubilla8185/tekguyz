@@ -58,9 +58,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-16 min-h-screen bg-gradient-to-br from-orange-50 to-pink-50">
+    <div className="pt-16 min-h-screen bg-slate-50">
       {/* Header Section */}
-      <section className="py-20 bg-gradient-to-br from-orange-500 via-pink-500 to-yellow-500">
+      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -119,7 +119,7 @@ const Contact = () => {
                   }
                 ].map((contact, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
                       <contact.icon className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -127,7 +127,7 @@ const Contact = () => {
                       {contact.href ? (
                         <a 
                           href={contact.href}
-                          className="text-gray-600 hover:text-orange-600 transition-colors"
+                          className="text-gray-600 hover:text-blue-600 transition-colors"
                         >
                           {contact.info}
                         </a>
@@ -161,14 +161,14 @@ const Contact = () => {
                     }
                   ].map((social, index) => (
                     <div key={index} className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
                         <social.icon className="h-6 w-6 text-white" />
                       </div>
                       <a 
                         href={social.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-orange-600 transition-colors font-medium"
+                        className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
                       >
                         {social.title}
                       </a>
@@ -200,7 +200,7 @@ const Contact = () => {
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="John"
                     />
                   </div>
@@ -214,7 +214,7 @@ const Contact = () => {
                       value={formData.lastName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="Doe"
                     />
                   </div>
@@ -230,7 +230,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -244,7 +244,7 @@ const Contact = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Your Company"
                   />
                 </div>
@@ -257,7 +257,7 @@ const Contact = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     <option value="">Select a service</option>
                     <option value="tech-consulting">Tech Consulting</option>
@@ -279,14 +279,14 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Tell us about your project or questions..."
                   ></textarea>
                 </div>
 
                 <Button
                   borderRadius="1.75rem"
-                  className="bg-gradient-to-r from-orange-500 to-pink-500 text-white border-orange-300 w-full"
+                  className="bg-blue-600 hover:bg-blue-700 text-white border-blue-500 w-full"
                   containerClassName="w-full"
                   disabled={isSubmitting}
                 >

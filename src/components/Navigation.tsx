@@ -25,7 +25,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-gradient-to-r from-orange-50/90 to-pink-50/90 backdrop-blur-md border-b border-orange-200/50 z-50">
+    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200/50 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo - Back to simplified version with proper spacing */}
@@ -35,17 +35,17 @@ const Navigation = () => {
             className="flex items-center space-x-2"
           >
             <div className="flex items-center space-x-1">
-              <div className="p-2 bg-white/20 rounded-full backdrop-blur-sm">
-                <Code className="h-5 w-5 sm:h-6 sm:w-6 text-orange-600" />
+              <div className="p-2 bg-slate-100 rounded-full">
+                <Code className="h-5 w-5 sm:h-6 sm:w-6 text-slate-700" />
               </div>
-              <div className="p-2 bg-yellow-300/30 rounded-full backdrop-blur-sm">
-                <Sun className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-500" />
+              <div className="p-2 bg-blue-100 rounded-full">
+                <Sun className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
               </div>
-              <div className="p-2 bg-green-400/30 rounded-full backdrop-blur-sm">
-                <Palmtree className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
+              <div className="p-2 bg-slate-100 rounded-full">
+                <Palmtree className="h-4 w-4 sm:h-5 sm:w-5 text-slate-600" />
               </div>
             </div>
-            <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="text-xl sm:text-2xl font-bold text-slate-800">
               TEKGUYZ
             </span>
           </Link>
@@ -59,14 +59,14 @@ const Navigation = () => {
                 onClick={handleNavClick}
                 className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   location.pathname === item.path
-                    ? 'text-orange-600'
-                    : 'text-gray-700 hover:text-orange-600'
+                    ? 'text-blue-600'
+                    : 'text-slate-700 hover:text-blue-600'
                 }`}
               >
                 {item.name}
                 {location.pathname === item.path && (
                   <motion.div
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500 to-pink-500"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600"
                     layoutId="underline"
                   />
                 )}
@@ -78,7 +78,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500 transition-colors duration-200"
+              className="p-2 rounded-md text-slate-700 hover:text-blue-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
               aria-expanded="false"
               aria-label="Toggle navigation menu"
             >
@@ -95,7 +95,7 @@ const Navigation = () => {
             exit={{ opacity: 0, y: -10 }}
             className="md:hidden"
           >
-            <div className="bg-white/95 backdrop-blur-md border-t border-orange-200/50 px-2 pt-2 pb-3 space-y-1">
+            <div className="bg-white/95 backdrop-blur-md border-t border-slate-200/50 px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -103,8 +103,8 @@ const Navigation = () => {
                   onClick={handleNavClick}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                     location.pathname === item.path
-                      ? 'text-orange-600 bg-orange-50'
-                      : 'text-gray-700 hover:text-orange-600 hover:bg-orange-50'
+                      ? 'text-blue-600 bg-blue-50'
+                      : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
                   }`}
                 >
                   {item.name}
