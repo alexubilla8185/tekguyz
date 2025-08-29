@@ -86,7 +86,7 @@ const Hero = () => {
               
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { metric: "50+", label: "Enterprise Clients", sublabel: "Fortune 500 companies" },
+                  { metric: "50+", label: "Valued Clients", sublabel: "Any size business" },
                   { metric: "99.9%", label: "System Uptime", sublabel: "Industry-leading reliability" },
                   { metric: "25+", label: "Years Experience", sublabel: "Deep technical expertise" },
                   { metric: "24/7", label: "Support Coverage", sublabel: "Global support team" }
