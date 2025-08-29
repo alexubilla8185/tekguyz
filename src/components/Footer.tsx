@@ -1,21 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Code, Sun, Palmtree, Mail, Phone, Linkedin, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
-  return (
-    <footer className="bg-gray-900 border-t-4 border-blue-600">
+                   <a 
+                     key={index}
+                     href={social.href}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors duration-200"
+                   >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Company Info */}
-          <div>
-            <Link to="/" className="flex items-center space-x-2 mb-6">
-              <div className="flex items-center space-x-1">
-                <div className="p-3 bg-gray-800 rounded-full">
-                  <Code className="h-6 w-6 text-gray-300" />
-                </div>
-                <div className="p-3 bg-blue-800 rounded-full">
-                  <Sun className="h-5 w-5 text-blue-400" />
+                   </a>
                 </div>
                 <div className="p-3 bg-gray-800 rounded-full">
                   <Palmtree className="h-5 w-5 text-gray-300" />
@@ -116,15 +111,13 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                 Privacy Policy
               </a>
+               <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-                Terms of Service
               </a>
             </div>
           </div>
-        </div>
       </div>
     </footer>
   );
-};
 
 export default Footer;

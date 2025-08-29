@@ -93,7 +93,15 @@ const Hero = () => {
                 ].map((stat, index) => (
                   <div key={index} className="text-center p-4 bg-gray-50 rounded-xl">
                     <div className="text-3xl font-bold text-blue-600 mb-1">{stat.metric}</div>
-                    <div className="text-gray-900 font-semibold text-sm mb-1">{stat.label}</div>
+                   <div className="text-gray-900 font-semibold text-sm mb-1">
+                     {stat.label === "Valued Clients" ? (
+                       <>
+                         Valued<br className="sm:hidden" />Clients
+                       </>
+                     ) : (
+                       stat.label
+                     )}
+                   </div>
                     <div className="text-gray-500 text-xs">{stat.sublabel}</div>
                   </div>
                 ))}
