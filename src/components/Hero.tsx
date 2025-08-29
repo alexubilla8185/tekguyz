@@ -64,8 +64,8 @@ const Hero = () => {
               {[
                 { icon: CheckCircle, text: "99.9% Uptime" },
                 { icon: Zap, text: "Rapid Deployment" },
-                { icon: Shield, text: "Enterprise Security" },
-                { icon: Users, text: "24/7 Support" }
+                { icon: Shield, text: "Robust Security" },
+                { icon: Users, text: "AI Prompt Engineer" }
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
@@ -81,8 +81,8 @@ const Hero = () => {
           <div className="relative">
             <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-xl">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Trusted by Industry Leaders</h3>
-                <p className="text-gray-600">Delivering excellence across enterprise solutions</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Trusted by Valued Clients</h3>
+                <p className="text-gray-600">Delivering excellence for businesses of all sizes</p>
               </div>
               
               <div className="grid grid-cols-2 gap-6">
