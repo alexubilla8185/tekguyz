@@ -17,10 +17,9 @@ const Hero = () => {
           {/* Left Column - Content */}
           <div>
             <div className="mb-8">
-              <div className="mb-4"></div>
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-100">
                 <Shield className="h-4 w-4 mr-2" />
-                Expert Technology Solutions
+                Enterprise Technology Solutions
               </span>
             </div>
 
@@ -51,7 +50,7 @@ const Hero = () => {
               <Link to="/services">
                 <Button
                   borderRadius="0.5rem"
-                  className="bg-blue-50 hover:bg-blue-100 text-blue-700 border-blue-200 px-8 py-4 font-semibold text-lg"
+                  className="bg-white hover:bg-gray-50 text-gray-900 border-gray-300 px-8 py-4 font-semibold text-lg"
                   containerClassName="w-auto"
                 >
                   Our Services
@@ -64,7 +63,7 @@ const Hero = () => {
               {[
                 { icon: CheckCircle, text: "99.9% Uptime" },
                 { icon: Zap, text: "Rapid Deployment" },
-                { icon: Shield, text: "Robust Security" },
+                { icon: Shield, text: "Enterprise Security" },
                 { icon: Users, text: "24/7 Support" }
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3">
@@ -81,8 +80,8 @@ const Hero = () => {
           <div className="relative">
             <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-xl">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Trusted by Valued Clients</h3>
-                <p className="text-gray-600">Delivering excellence for businesses of all sizes</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Trusted by Industry Leaders</h3>
+                <p className="text-gray-600">Delivering excellence across enterprise solutions</p>
               </div>
               
               <div className="grid grid-cols-2 gap-6">
@@ -103,7 +102,7 @@ const Hero = () => {
               <div className="mt-8 pt-6 border-t border-gray-100">
                 <div className="flex items-center justify-center space-x-4">
                   <Award className="h-6 w-6 text-blue-600" />
-                  <span className="text-gray-700 font-medium">ISO 27001 Certifid</span>
+                  <span className="text-gray-700 font-medium">ISO 27001 Certifie</span>
                 </div>
               </div>
             </div>
