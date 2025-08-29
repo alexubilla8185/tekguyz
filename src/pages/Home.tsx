@@ -70,7 +70,7 @@ const Home = () => {
                     <div className="text-sm text-gray-600">Years Experience</div>
                   </div>
                   <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                    <div className="text-2xl font-bold text-gray-600">100+</div>
+                    <div className="text-2xl font-bold text-blue-600">50+</div>
                     <div className="text-sm text-gray-600">Happy Clients</div>
                   </div>
                 </div>
