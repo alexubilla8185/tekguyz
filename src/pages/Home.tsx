@@ -9,7 +9,6 @@ const Home = () => {
   const features = [
     "24/7 DevOps Monitoring & Support",
     "Custom Software Solutions",
-    "Cloud Migration & Optimization",
     "Automated Testing & QA",
     "Technical Documentation",
     "Domain & DNS Management"
