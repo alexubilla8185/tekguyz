@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="mb-8">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-100">
                 <Shield className="h-4 w-4 mr-2" />
-                Enterprise Technology Solutions
+                Expert Technology Solutions
               </span>
             </div>
 
@@ -63,7 +63,7 @@ const Hero = () => {
               {[
                 { icon: CheckCircle, text: "99.9% Uptime" },
                 { icon: Zap, text: "Rapid Deployment" },
-                { icon: Shield, text: "Enterprise Security" },
+                { icon: Shield, text: "Robust Security" },
                 { icon: Users, text: "24/7 Support" }
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3">
@@ -80,8 +80,8 @@ const Hero = () => {
           <div className="relative">
             <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-xl">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Trusted by Industry Leaders</h3>
-                <p className="text-gray-600">Delivering excellence across enterprise solutions</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Trusted by Valued Clients</h3>
+                <p className="text-gray-600">Delivering excellence for businesses of all sizes</p>
               </div>
               
               <div className="grid grid-cols-2 gap-6">
