@@ -65,7 +65,7 @@ const Hero = () => {
                 { icon: CheckCircle, text: "99.9% Uptime" },
                 { icon: Zap, text: "Rapid Deployment" },
                 { icon: Shield, text: "Robust Security" },
-                { icon: Users, text: "AI Prompt Engineer" }
+                { icon: Users, text: "24/7 Support" }
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
