@@ -51,7 +51,7 @@ const Hero = () => {
               <Link to="/services">
                 <Button
                   borderRadius="0.5rem"
-                  className="bg-white hover:bg-gray-50 text-gray-900 border-gray-300 px-8 py-4 font-semibold text-lg"
+                  className="bg-blue-50 hover:bg-blue-100 text-blue-700 border-blue-200 px-8 py-4 font-semibold text-lg"
                   containerClassName="w-auto"
                 >
                   Our Services
