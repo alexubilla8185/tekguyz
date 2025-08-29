@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="mb-8">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-100">
                 <Shield className="h-4 w-4 mr-2" />
-                Enterprise Technology Solutions
+                Expert Technology Solutions
               </span>
             </div>
 
