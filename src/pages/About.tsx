@@ -1,49 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Users, Target, Award, Linkedin, Twitter, Github } from 'lucide-react';
+import { Users, Target, Award } from 'lucide-react';
 import { Button } from '../components/ui/moving-border';
 
 const About = () => {
-  const teamMembers = [
-    {
-      name: "Carlos Rodriguez",
-      title: "Lead DevOps Engineer",
-      bio: "10+ years of cloud infrastructure expertise with AWS, Azure, and GCP. Specializes in containerization, CI/CD automation, and scalable system architecture design. Passionate about innovation and helping teams succeed.",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "Sofia Martinez",
-      title: "Principal Cloud Architect",
-      bio: "Former tech lead at Fortune 500 companies. Expert in microservices architecture, Kubernetes orchestration, and enterprise-level digital transformation strategies. Dedicated to delivering exceptional results.",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "Alex Thompson",
-      title: "Senior Full-Stack Developer",
-      bio: "Passionate about creating scalable web applications. Specialized in React, Node.js, and modern JavaScript frameworks with expertise in database optimization and performance tuning.",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "Maria Gonzalez",
-      title: "QA Engineering Manager",
-      bio: "Quality assurance expert with extensive experience in automated testing frameworks, performance optimization, and security auditing for enterprise applications. Committed to excellence.",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "Jordan Kim",
-      title: "Technical Writer & Documentation Lead",
-      bio: "Transforms complex technical concepts into clear, actionable documentation. Specializes in API documentation, user guides, and developer experience optimization.",
-      image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "Roberto Silva",
-      title: "Infrastructure Security Specialist",
-      bio: "Cybersecurity expert focused on DevSecOps practices, cloud security architecture, and compliance frameworks for regulated industries. Dedicated to keeping systems secure.",
-      image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400"
-    }
-  ];
-
   const values = [
     {
       icon: Target,
@@ -158,56 +119,6 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Our Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the experts who bring decades of combined experience to every project, 
-              ensuring your technology initiatives succeed with professional excellence.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
-              >
-                <div className="aspect-w-1 aspect-h-1">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-3">{member.title}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{member.bio}</p>
-                  
-                  <div className="flex space-x-3">
-                    <button className="w-8 h-8 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center transition-colors">
-                      <Linkedin className="h-4 w-4 text-gray-600" />
-                    </button>
-                    <button className="w-8 h-8 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center transition-colors">
-                      <Twitter className="h-4 w-4 text-gray-600" />
-                    </button>
-                    <button className="w-8 h-8 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center transition-colors">
-                      <Github className="h-4 w-4 text-gray-600" />
-                    </button>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
