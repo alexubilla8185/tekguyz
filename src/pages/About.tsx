@@ -65,7 +65,7 @@ const About = () => {
   return (
     <div className="pt-16 min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+      <section className="py-20" style={{ backgroundColor: '#3a63da' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">

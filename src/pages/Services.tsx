@@ -62,7 +62,7 @@ const Services = () => {
   return (
     <div className="pt-16 min-h-screen bg-white">
       {/* Header Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+      <section className="py-20" style={{ backgroundColor: '#3a63da' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
