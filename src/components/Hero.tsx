@@ -99,12 +99,7 @@ const Hero = () => {
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-gray-100">
-                <div className="flex items-center justify-center space-x-4">
-                  <Award className="h-6 w-6 text-blue-600" />
-                  <span className="text-gray-700 font-medium">ISO 27001 Certifie</span>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
